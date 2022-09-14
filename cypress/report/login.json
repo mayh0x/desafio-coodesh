@@ -1,0 +1,278 @@
+{
+  "stats": {
+    "suites": 9,
+    "tests": 2,
+    "passes": 2,
+    "pending": 0,
+    "failures": 0,
+    "start": "2022-09-14T19:24:46.099Z",
+    "end": "2022-09-14T19:25:09.248Z",
+    "duration": 23149,
+    "testsRegistered": 2,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "5a03367d-babe-4346-b75e-e41425b572fe",
+      "title": "",
+      "fullFile": "cypress\\e2e\\login.cy.js",
+      "file": "cypress\\e2e\\login.cy.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "2db4586f-d212-4000-9b12-2bdf8923cd2f",
+          "title": "Login",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [],
+          "suites": [
+            {
+              "uuid": "9758f244-c8c9-4996-8280-859d30b1b274",
+              "title": "Checking if the login page loads correctly",
+              "fullFile": "",
+              "file": "",
+              "beforeHooks": [],
+              "afterHooks": [],
+              "tests": [],
+              "suites": [
+                {
+                  "uuid": "f2091245-325c-4fac-a70b-00dc49530d48",
+                  "title": "Given I access the Coodesh Beta page",
+                  "fullFile": "",
+                  "file": "",
+                  "beforeHooks": [],
+                  "afterHooks": [],
+                  "tests": [],
+                  "suites": [
+                    {
+                      "uuid": "4241c168-1775-4693-a7d2-918571834172",
+                      "title": "When I enter the login page",
+                      "fullFile": "",
+                      "file": "",
+                      "beforeHooks": [],
+                      "afterHooks": [],
+                      "tests": [
+                        {
+                          "title": "Then the login page loads its components correctly",
+                          "fullTitle": "Login Checking if the login page loads correctly Given I access the Coodesh Beta page When I enter the login page Then the login page loads its components correctly",
+                          "timedOut": null,
+                          "duration": 10182,
+                          "state": "passed",
+                          "speed": "slow",
+                          "pass": true,
+                          "fail": false,
+                          "pending": false,
+                          "context": null,
+                          "code": "cy.url().should('be.equal', 'https://beta.coodesh.com/auth/signin/candidates');\ncy.get('.u-header__navbar').should('be.visible');\ncy.get('.w-70').should('be.visible');\ncy.get('.h3').should('contain', 'Faça o login');\ncy.get('.w-70 > div.d-flex').should('be.visible');\ncy.get('.mt-5 > :nth-child(1)').should('be.visible');\ncy.get('.mt-5 > :nth-child(2)').should('be.visible');\ncy.get('div.col-12 > .transition-3d-hover').should('contain', 'Entrar');\ncy.get('.text-center > div').should('contain', 'Cadastre-se');",
+                          "err": {},
+                          "uuid": "e12f1e3b-da5c-4770-870a-1f8c20addc9b",
+                          "parentUUID": "4241c168-1775-4693-a7d2-918571834172",
+                          "isHook": false,
+                          "skipped": false
+                        }
+                      ],
+                      "suites": [],
+                      "passes": [
+                        "e12f1e3b-da5c-4770-870a-1f8c20addc9b"
+                      ],
+                      "failures": [],
+                      "pending": [],
+                      "skipped": [],
+                      "duration": 10182,
+                      "root": false,
+                      "rootEmpty": false,
+                      "_timeout": 2000
+                    }
+                  ],
+                  "passes": [],
+                  "failures": [],
+                  "pending": [],
+                  "skipped": [],
+                  "duration": 0,
+                  "root": false,
+                  "rootEmpty": false,
+                  "_timeout": 2000
+                }
+              ],
+              "passes": [],
+              "failures": [],
+              "pending": [],
+              "skipped": [],
+              "duration": 0,
+              "root": false,
+              "rootEmpty": false,
+              "_timeout": 2000
+            },
+            {
+              "uuid": "c15bba42-0b6c-4206-b546-9be02cb66907",
+              "title": "Creating an account",
+              "fullFile": "",
+              "file": "",
+              "beforeHooks": [],
+              "afterHooks": [],
+              "tests": [],
+              "suites": [
+                {
+                  "uuid": "104d98f1-88a4-439f-bcf8-c4a4d2782f95",
+                  "title": "Given I access the Coodesh Beta page",
+                  "fullFile": "",
+                  "file": "",
+                  "beforeHooks": [],
+                  "afterHooks": [],
+                  "tests": [],
+                  "suites": [
+                    {
+                      "uuid": "793a2219-afd1-41b6-ae67-f90a14e62935",
+                      "title": "When I enter the login page",
+                      "fullFile": "",
+                      "file": "",
+                      "beforeHooks": [],
+                      "afterHooks": [],
+                      "tests": [],
+                      "suites": [
+                        {
+                          "uuid": "b3df7cd1-061f-4768-b2bb-5b0031565491",
+                          "title": "And I click on the register button",
+                          "fullFile": "",
+                          "file": "",
+                          "beforeHooks": [],
+                          "afterHooks": [],
+                          "tests": [],
+                          "suites": [
+                            {
+                              "uuid": "74801983-a16e-422d-be41-69e34df35ea9",
+                              "title": "And I fill in the fields correctly",
+                              "fullFile": "",
+                              "file": "",
+                              "beforeHooks": [],
+                              "afterHooks": [],
+                              "tests": [
+                                {
+                                  "title": "Then I can create an account",
+                                  "fullTitle": "Login Creating an account Given I access the Coodesh Beta page When I enter the login page And I click on the register button And I fill in the fields correctly Then I can create an account",
+                                  "timedOut": null,
+                                  "duration": 10310,
+                                  "state": "passed",
+                                  "speed": "slow",
+                                  "pass": true,
+                                  "fail": false,
+                                  "pending": false,
+                                  "context": null,
+                                  "code": "cy.get('.align-items-center > .transition-3d-hover').click();",
+                                  "err": {},
+                                  "uuid": "871e28d3-c1ba-4b2e-891c-0858cf85e872",
+                                  "parentUUID": "74801983-a16e-422d-be41-69e34df35ea9",
+                                  "isHook": false,
+                                  "skipped": false
+                                }
+                              ],
+                              "suites": [],
+                              "passes": [
+                                "871e28d3-c1ba-4b2e-891c-0858cf85e872"
+                              ],
+                              "failures": [],
+                              "pending": [],
+                              "skipped": [],
+                              "duration": 10310,
+                              "root": false,
+                              "rootEmpty": false,
+                              "_timeout": 2000
+                            }
+                          ],
+                          "passes": [],
+                          "failures": [],
+                          "pending": [],
+                          "skipped": [],
+                          "duration": 0,
+                          "root": false,
+                          "rootEmpty": false,
+                          "_timeout": 2000
+                        }
+                      ],
+                      "passes": [],
+                      "failures": [],
+                      "pending": [],
+                      "skipped": [],
+                      "duration": 0,
+                      "root": false,
+                      "rootEmpty": false,
+                      "_timeout": 2000
+                    }
+                  ],
+                  "passes": [],
+                  "failures": [],
+                  "pending": [],
+                  "skipped": [],
+                  "duration": 0,
+                  "root": false,
+                  "rootEmpty": false,
+                  "_timeout": 2000
+                }
+              ],
+              "passes": [],
+              "failures": [],
+              "pending": [],
+              "skipped": [],
+              "duration": 0,
+              "root": false,
+              "rootEmpty": false,
+              "_timeout": 2000
+            }
+          ],
+          "passes": [],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 0,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": false,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.1.3"
+    },
+    "marge": {
+      "options": {
+        "charts": true,
+        "overwrite": false,
+        "html": false,
+        "json": true,
+        "reportDir": "cypress/report/mochawesome-report"
+      },
+      "version": "6.2.0"
+    }
+  }
+}

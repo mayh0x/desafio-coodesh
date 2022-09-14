@@ -1,0 +1,201 @@
+{
+  "stats": {
+    "suites": 6,
+    "tests": 1,
+    "passes": 1,
+    "pending": 0,
+    "failures": 0,
+    "start": "2022-09-14T19:25:17.143Z",
+    "end": "2022-09-14T19:25:36.605Z",
+    "duration": 19462,
+    "testsRegistered": 1,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "4d532a0e-1bf4-49a2-b262-0c749fb13077",
+      "title": "",
+      "fullFile": "cypress\\e2e\\search_company.cy.js",
+      "file": "cypress\\e2e\\search_company.cy.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "823d4bf5-f7cb-4c13-abbb-67bcea70da45",
+          "title": "Search Company",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [],
+          "suites": [
+            {
+              "uuid": "50eeacf8-b55e-4586-acc4-f0235d07132a",
+              "title": "Checking if the forms are correct",
+              "fullFile": "",
+              "file": "",
+              "beforeHooks": [],
+              "afterHooks": [],
+              "tests": [],
+              "suites": [
+                {
+                  "uuid": "da92f3fd-ffb5-4350-a31b-6cee78f66401",
+                  "title": "Given I access the Coodesh Beta page",
+                  "fullFile": "",
+                  "file": "",
+                  "beforeHooks": [],
+                  "afterHooks": [],
+                  "tests": [],
+                  "suites": [
+                    {
+                      "uuid": "5ad7a24b-2cbf-4ca9-8b26-feeb8c185752",
+                      "title": "When I enter the login page",
+                      "fullFile": "",
+                      "file": "",
+                      "beforeHooks": [],
+                      "afterHooks": [],
+                      "tests": [],
+                      "suites": [
+                        {
+                          "uuid": "1c9223a3-a987-44da-83e3-193973336047",
+                          "title": "And I login in an account",
+                          "fullFile": "",
+                          "file": "",
+                          "beforeHooks": [],
+                          "afterHooks": [],
+                          "tests": [],
+                          "suites": [
+                            {
+                              "uuid": "523b3abb-58c5-4123-b382-b21b928ccb6c",
+                              "title": "And I go to the companies page",
+                              "fullFile": "",
+                              "file": "",
+                              "beforeHooks": [],
+                              "afterHooks": [],
+                              "tests": [
+                                {
+                                  "title": "Then I search for a company and see the results",
+                                  "fullTitle": "Search Company Checking if the forms are correct Given I access the Coodesh Beta page When I enter the login page And I login in an account And I go to the companies page Then I search for a company and see the results",
+                                  "timedOut": null,
+                                  "duration": 17134,
+                                  "state": "passed",
+                                  "speed": "slow",
+                                  "pass": true,
+                                  "fail": false,
+                                  "pending": false,
+                                  "context": null,
+                                  "code": "cy.get('.col-lg-7 > .input-group > .form-control').type('Teste');\ncy.get('.align-self-lg-end > .btn-block').click();\ncy.get(':nth-child(1) > .card > .p-3').should('contain', 'Teste');",
+                                  "err": {},
+                                  "uuid": "d4c62e19-5b06-4f9d-846a-cd6139617462",
+                                  "parentUUID": "523b3abb-58c5-4123-b382-b21b928ccb6c",
+                                  "isHook": false,
+                                  "skipped": false
+                                }
+                              ],
+                              "suites": [],
+                              "passes": [
+                                "d4c62e19-5b06-4f9d-846a-cd6139617462"
+                              ],
+                              "failures": [],
+                              "pending": [],
+                              "skipped": [],
+                              "duration": 17134,
+                              "root": false,
+                              "rootEmpty": false,
+                              "_timeout": 2000
+                            }
+                          ],
+                          "passes": [],
+                          "failures": [],
+                          "pending": [],
+                          "skipped": [],
+                          "duration": 0,
+                          "root": false,
+                          "rootEmpty": false,
+                          "_timeout": 2000
+                        }
+                      ],
+                      "passes": [],
+                      "failures": [],
+                      "pending": [],
+                      "skipped": [],
+                      "duration": 0,
+                      "root": false,
+                      "rootEmpty": false,
+                      "_timeout": 2000
+                    }
+                  ],
+                  "passes": [],
+                  "failures": [],
+                  "pending": [],
+                  "skipped": [],
+                  "duration": 0,
+                  "root": false,
+                  "rootEmpty": false,
+                  "_timeout": 2000
+                }
+              ],
+              "passes": [],
+              "failures": [],
+              "pending": [],
+              "skipped": [],
+              "duration": 0,
+              "root": false,
+              "rootEmpty": false,
+              "_timeout": 2000
+            }
+          ],
+          "passes": [],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 0,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": false,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.1.3"
+    },
+    "marge": {
+      "options": {
+        "charts": true,
+        "overwrite": false,
+        "html": false,
+        "json": true,
+        "reportDir": "cypress/report/mochawesome-report"
+      },
+      "version": "6.2.0"
+    }
+  }
+}
