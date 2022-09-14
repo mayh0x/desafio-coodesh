@@ -12,12 +12,3 @@ Feature: Login
     And I click on the register button
     And I fill in the fields correctly
     Then I can create an account
-
-
-  Scenario: Creating an account with Google
-    Given I access the Coodesh Beta page
-    When I enter the login page
-    And I click on the register button
-    And I click the Google button
-    And I log into a Google account
-    Then I can create an account

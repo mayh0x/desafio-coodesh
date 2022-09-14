@@ -15,20 +15,17 @@
 
 // Import commands.js using ES2015 syntax:
 import './commands'
+import 'cypress-mochawesome-reporter/register'
 
 // Alternatively you can use CommonJS syntax:
 // require('./commands')
 require('cypress-xpath')
 
-const { GoogleSocialLogin, GitHubSocialLogin } = require('cypress-social-logins').plugins
-/**
-* @type {Cypress.PluginConfig}
-*/
-module.exports = (on, config) => {
-  // `on` is used to hook into various events Cypress emits
-  // `config` is the resolved Cypress config
-  on('task', {
-    GoogleSocialLogin: GoogleSocialLogin,
-    GitHubSocialLogin: GitHubSocialLogin
-  })
-}
+const addContext = require('mochawesome/addContext')
+
+Cypress.on('test:after:run', (test, runnable) => {
+  if (test.state === 'failed') {
+    const screenshotFileName = `${runnable.parent.parent.parent.title? runnable.parent.parent.parent.title + ' -- ' : ''}${runnable.parent.parent.title? runnable.parent.parent.title + ' -- ' : ''}${runnable.parent.title} -- ${test.title} (failed).png`
+    addContext({ test }, `assets/${Cypress.spec.name}/${screenshotFileName}`)
+  }
+});
