@@ -49,6 +49,7 @@ Neste desafio foi testada a [página Beta da Coodesh](https://beta.coodesh.com/)
 # 💻 Apresentação
 
 [Clique aqui para conferir a pasta apresentação do desafio](hhttps://drive.google.com/drive/folders/1M2OCrMGPKKoFoYM0brQfKJ6gGpi6410l?usp=sharing)
+
 <br />
 
 [Clique aqui para conferir o vídeo da apresentação do desafio](https://www.loom.com/share/dc4f621bb8754afcb18f49b98f068de0)
