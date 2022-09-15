@@ -35,7 +35,7 @@ describe('Profile Forms', () => {
               cy.get('.css-xb97g8')
                 .click({ multiple: true, force: true })
               cy.get('.col-md-12 > .form-text > div > :nth-child(1)')
-                .click({ multiple: true, force: true })
+                .click()
               cy.get('.col-md-12 > .form-text > div > :nth-child(1)')
                 .click()
               cy.get('#years_experience')
@@ -55,7 +55,7 @@ describe('Profile Forms', () => {
                 .click()
 
               cy.get(':nth-child(1) > :nth-child(3) > .btn-icon')
-                .click({ multiple: true, force: true })
+                .click()
               cy.get(':nth-child(1) > :nth-child(3) > .btn-icon')
                 .click()
               cy.get(':nth-child(3) > :nth-child(6)')

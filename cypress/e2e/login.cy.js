@@ -70,6 +70,9 @@ describe('Login', () => {
             it('Then I can create an account', () => {
               cy.get('.align-items-center > .transition-3d-hover')
                 .click()
+              cy.wait(6000)
+              cy.get('.py-2 > .d-flex > .ml-2')
+                .should('contain', 'Onboarding')
             })
           })
         })
